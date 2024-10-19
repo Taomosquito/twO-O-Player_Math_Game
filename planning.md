@@ -36,14 +36,14 @@
 
 1. question logic
 
-- written as the TurnLogic class
+- written as the QuestionLogic module
 - consists of methods on that class that do the various things that happen each turn
   - generates question
   - handles logic regarding quesiton interaction.
 
-2. player
+2. players
 
-- written as the PlayerState class
+- written as the Players class
 - handles player attributes such as:
 
   - lives
@@ -52,19 +52,19 @@
 
 3. message references
 
-- written as MessageReferences class
+- written as MessageReferences module
 - handles various re-used messges like:
 
   - " --- NEW TURN ---"
   - " P1: x/x vs P2 x/x"
   - "Player x: Seriously? No!"
   - "Player x: Yes! you are correct."
-  - "Player x: What does x y x equal?"
+  - "Player x: What does x y z equal?"
   - also handles some single reference messages like:
     - " ---GAME OVER ---"
     - "Good bye!
 
-4. overall game logic
+4. overall game logic (will be main.rb by convention)
 
 - root of project
 - combines all above classes.
